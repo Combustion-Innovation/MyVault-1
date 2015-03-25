@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/push_ad_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/alertbasewithblur"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pa_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <Button
+            android:id="@+id/pa_btn_x"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/x" />
+
+        <TextView
+            android:id="@+id/pa_upper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Every button has a purpose."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pa_lower_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pa_upper_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Play PUSH for free."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/pa_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pa_middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_weight=".5" >
+
+        <ImageView
+            android:id="@+id/pa_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/push_ad_image" />
+
+        <ImageView
+            android:id="@+id/pa_lowerline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/line" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pa_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pa_btn_download"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Download Now!"
+            android:textColor="#007AFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

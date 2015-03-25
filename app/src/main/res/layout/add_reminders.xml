@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_reminders_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ar_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/ar_title_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Reminder Title"
+            android:paddingLeft="10dp" >
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/ar_alias_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Alias (What People See)"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ar_datetime_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/ar_date_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Reminder Date"
+                android:inputType="date"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/ar_time_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Reminder Time"
+                android:inputType="time"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ar_location_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Location"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ar_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ar_submit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fa954c"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ar_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

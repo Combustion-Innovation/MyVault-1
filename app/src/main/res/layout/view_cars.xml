@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_car_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vaultbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vc_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/vc_make_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Car Make"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/vc_modelyear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/vc_model_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Model"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/vc_year_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Year"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vc_platecompany_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/vc_plate_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Plate #"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/vc_company_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Company"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/vc_policy_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Policy #"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/vc_agentname_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Agent Name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/vc_agentnum_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Agent #"
+            android:inputType="phone"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/vc_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

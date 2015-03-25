@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_insurance_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vi_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/vi_provider_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Provider"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/vi_membername_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Member Name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/vi_memberid_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Member ID"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:id="@+id/vi_grouptypeplan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/vi_group_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Group #"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/vi_type_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Type"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/vi_plancodes_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Plan Codes"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/vi_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewmedia_screen_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vaultbg"
+     >
+
+    <ImageView
+        android:id="@+id/vm_dim_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#88000000" />
+
+    <LinearLayout
+        android:id="@+id/vm_mainpage_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/vm_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#2f3d3d"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vm_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Media"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vm_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/vm_buttons_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/vm_backbtn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#d25e0a"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/vm_back_buttton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/arrow_left_alt1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vm_editbtn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#cccccc"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/vm_edit_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/pen_alt2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vm_addbtn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fa954c"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/vm_add_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/plus_alt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vm_addform_toplayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/vm_addform_backbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/x_alt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/vm_grid_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/vm_data_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/vm_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/transparent"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollingCache="false" >
+                </GridView>
+
+                <LinearLayout
+                    android:id="@+id/vm_nolist_holder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/vaultbg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/vm_nolist_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="36sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vm_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/vm_gallery_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_button_bkgd"
+            android:text="From Gallery"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/vm_camera_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_button_bkgd"
+            android:text="Take Photo"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/vm_video_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_button_bkgd"
+            android:text="Take Video"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/vm_cancel_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_button_bkgd"
+            android:text="Cancel"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

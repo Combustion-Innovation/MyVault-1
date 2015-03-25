@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list_buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/list_backbtn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#d25e0a"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/list_back_buttton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_left_alt1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_editbtn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#e0782d"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/list_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pen_alt2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_addbtn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#fa954c"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/list_add_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/plus_alt" />
+
+            </LinearLayout>
+        </LinearLayout>

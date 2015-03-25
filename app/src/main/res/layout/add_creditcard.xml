@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_creditcard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/acc_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/acc_nickname_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Nickname"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/acc_carholder_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Cardholder Name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/acc_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="#"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:id="@+id/acc_exptypecvc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/acc_exp_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Exp."
+                android:inputType="date|number"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/acc_type_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Type"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/acc_cvc_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="CVC"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acc_submit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fa954c"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/acc_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

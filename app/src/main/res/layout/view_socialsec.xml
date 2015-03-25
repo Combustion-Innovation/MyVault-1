@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_socialsec_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vss_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/vss_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Name"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/vss_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="#"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/vss_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:minHeight="60dp"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

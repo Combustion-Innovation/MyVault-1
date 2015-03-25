@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/details_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/details_backbtn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#d25e0a"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/details_back_buttton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_left_alt1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_editbtn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#e0782d"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/details_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pen_alt2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_deletebtn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#fa954c"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/details_delete_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/x_alt" />
+
+            </LinearLayout>
+
+    </LinearLayout>

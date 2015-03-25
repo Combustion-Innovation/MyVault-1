@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_accounts_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/aa_inputs_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/aa_business_input"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Business Name"
+            android:paddingLeft="10dp" >
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/aa_account_input"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Account #"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/aa_phone_input"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Phone #"
+            android:inputType="phone"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/aa_notes_input"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aa_submit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#fa954c"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/aa_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

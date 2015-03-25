@@ -1,0 +1,521 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/settings_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_top_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/separatorline" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/settings_listview_scroller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/settings_listview_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/settings_credit_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_credit_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_credit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Cards"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_ss_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_ss_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_ss_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SS Cards"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_password_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_password_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_password_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passwords"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_accounts_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_accounts_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_accounts_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accounts"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_contacts_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_contacts_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_contacts_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacts"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_notes_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_notes_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_notes_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notes"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_media_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_media_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_media_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Media"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_cars_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_cars_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_cars_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cars"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_reminders_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_reminders_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_reminders_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reminders"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_bookmarks_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_bookmarks_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_bookmarks_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bookmarks"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/settings_insurance_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/settings_insurance_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/settings_insurance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insurance"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/settings_appsbtn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/settings_apps_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="Apps"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_termsbtn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/settings_terms_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="Terms"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_privacybtn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/settings_privacy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="Privacy"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_feedbackbtn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/settings_feedback_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="Feedback"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_spacer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+        <ScrollView
+            android:id="@+id/settings_terms_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/settings_terms_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/settings_terms_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+            </LinearLayout>
+        </ScrollView>
+        
+        <ScrollView
+            android:id="@+id/settings_privacy_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/settings_privacy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/settings_privacy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/settings_passcode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2f3d3d"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/settings_passcode_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Passcode:"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/settings_passcode_btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/settings_passcode_toggle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:text="ToggleButton"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_exit_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right" >
+
+            <RelativeLayout
+                android:id="@+id/settings_exit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="#d25e0a" >
+
+                <com.myvault.myvault.SpinningCog
+                    android:id="@+id/settings_exit_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cog" />
+
+                <TextView
+                    android:id="@+id/settings_exit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Exit"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

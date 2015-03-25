@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lockscreen_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vaultbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ls_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#2f3d3d"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ls_top_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ls_spacer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fa954c"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ls_cancel_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ls_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ls_grid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/ls_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none" >
+
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_car_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vaultbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ac_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/ac_make_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Car Make"
+            android:paddingLeft="10dp" >
+            
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/ac_modelyear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:showDividers="middle" >
+
+            <EditText
+                android:id="@+id/ac_model_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Model"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/ac_year_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Year"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_platecompany_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:showDividers="middle" >
+
+            <EditText
+                android:id="@+id/ac_plate_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Plate #"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/ac_company_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_minimal"
+                android:ems="10"
+                android:hint="Company"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ac_policy_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Policy #"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ac_agentname_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Agent Name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ac_agentnum_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:hint="Agent #"
+            android:inputType="phone"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ac_notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_minimal"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_submit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fa954c"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ac_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

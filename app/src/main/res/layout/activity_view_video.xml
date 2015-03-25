@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_view_video_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <VideoView
+        android:id="@+id/avv_video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/avv_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/orange_border_button"
+        android:padding="5dp"
+        android:text=" Done "
+        android:textColor="#d25e0a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/avv_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/orange_border_button"
+        android:padding="5dp"
+        android:text="Delete"
+        android:textColor="#d25e0a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/avv_play_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/playbutton" />
+
+    <Button
+        android:id="@+id/avv_share_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shareicon"
+        android:padding="10dp" />
+
+    <MediaController
+        android:id="@+id/avv_media_controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </MediaController>
+
+</RelativeLayout>
